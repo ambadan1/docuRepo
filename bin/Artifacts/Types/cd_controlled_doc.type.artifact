@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Artifact:Artifact xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Artifact="http://documentum.emc.com/infrastructure/12012007/artifact" xmlns:dclass="http://documentum.emc.com/artifact/12012007/dclass" urn="urnd:com.emc.ide.artifact.dclass/cd_controlled_doc?name=cd_controlled_doc" categoryId="com.emc.ide.artifact.dclass" implicitlyCreated="true">
+  <dataModel xsi:type="dclass:DClass">
+    <type name="cd_controlled_doc">
+      <primaryElement>
+        <attributes attr_name="category" ID="BVPqGH44VqaMUSWTIxBhM">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Control Category" help_text="Defines the level of control required for the document." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="INTEGER"/>
+        </attributes>
+        <attributes attr_name="readers" attr_repeating="true" attr_length="255" ID="7b+VIPF84yd8FiGzHyOgdB">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Readers" help_text="Users who read the document but are not required to provide review feeback on the document." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="reviewers" attr_repeating="true" attr_length="255" ID="dGYuM*ZEkGK8eqopjDg6V7">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Reviewers" help_text="Users who review the document." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="approvers" attr_repeating="true" attr_length="255" ID="71hyF69j4mVbBNLjNTv2cf">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Approvers" help_text="Users who approve the document." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="qo_approvers" attr_repeating="true" attr_length="255" ID="2GAA0Mv0Q9pbgUP8A0p1BF">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="QO Approvers" help_text="Users from the Quality Organization (QO) who approve the document." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="doc_coordinators" attr_repeating="true" attr_length="255" ID="7SwuFfdzQbo9wgaBb0VtbS">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Document Coordinators" help_text="A document coordinator ensures that the effective and expiry dates are set correctly. This person(s) or role is responsible for maintenance of the document at each stage of its lifecycle. (Note: Equivalent to business_owner in the DIA EDM Refeerence Model" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="country" attr_length="32" ID="bVDGzMoku78uSGasLOUWd">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Country" help_text="May be different than the language." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="effective_date" ID="fn1vOZMJkWf8hFetjJogh8">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Effective Date" help_text="Date in which the document reaches the Effective lifecycle state.  For the EDM and TMF Reference models, this represents the issued_date." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="TIME"/>
+        </attributes>
+        <attributes attr_name="expiration_date" ID="8WQ8lGyiktsaVmkdccwM0s">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Expiration Date" help_text="Date in which the document reaches the Expired lifecycle state." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="TIME"/>
+        </attributes>
+        <attributes attr_name="review_date" ID="abVPj2N4QL18Hh6JTvfgbZ">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Review Date" help_text="Date by which the document needs to be reviewed." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="TIME"/>
+        </attributes>
+        <attributes attr_name="approved_date" ID="e+eGKc+tAze9BPvhhowdGF">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Approved Date" help_text="Date on which the document was approved." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="TIME"/>
+        </attributes>
+        <attributes attr_name="contributors" attr_repeating="true" attr_length="255" ID="9FtJpFh5kYW8HkqYDRk1qF">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Contributors" help_text="Represents person(s) who contributed to the content of the document." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="issued_date" ID="fyqgMcJPQ889hkIuSTXHQl">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Issued Date" help_text="Date on which the document was released for use." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="TIME"/>
+        </attributes>
+        <attributes attr_name="litigation_hold" ID="eF+Fa8W2AQ88ov5mMykWt8">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg="false"/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Litigation Hold" help_text=" Indication of whether any changes to the document should be delayed due to litigation." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType"/>
+        </attributes>
+        <attributes attr_name="project_name" attr_length="64" ID="7kR5hSPtAe9bve1oMUL7ju">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Project Name" help_text="Project/product name." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="tbr_distribution_list" attr_repeating="true" attr_length="255" ID="cSrnD39C4RYacr8DIQXLxL">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="TBR Distribution List" help_text="To be read (TBR) distribution list." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="auditors" attr_repeating="true" attr_length="255" ID="2UFncKgyQ3J8hWcJjifvqs">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Auditors" help_text="Clinical auditors/investigators." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="regulatory_affairs" attr_repeating="true" attr_length="255" ID="egqZ+0OwQQta1zd3Fz7OzI">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Regulatory Affairs" help_text="Users with regulatory affairs responsibility for the document." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="dossier_element_id" attr_length="48" ID="3kqYN9rCQm5aoLL3KbtC5n">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Dossier Element ID" help_text="Element ID for this document corresponding to its matching node in the dossier template." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="document_type" attr_length="64" ID="2Jcl7A6I4Y98Y91mRQSwFL">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Document Type" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="document_id" attr_length="10" ID="7*1od4jmQMh9TIYSGhPMzB">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Document ID" help_text="Unique identifier assigned to a controlled document." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="form_managers" attr_repeating="true" attr_length="255" ID="8l2m0LLEkVf9iISyr5TYVt">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Form Managers" help_text="Users that manage common property information. An example of common properties is information describing a product or project that applies to all documents relevant to that product or project." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="form_users" attr_repeating="true" attr_length="255" ID="fMXwgPrH4Eraut5m6HvQC9">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Form Users" help_text="Users that access common property information. An example of common properties is information describing a product or project that applies to all documents relevant to that product or project." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="document_source" ID="5lLfs1BAQhy8b7wYfTBLwP">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Document Source" help_text="Indicates the route by which the document was input into the repository." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="INTEGER"/>
+        </attributes>
+        <attributes attr_name="domain" attr_length="64" ID="4sRcP7s4Qdkben2pnlSqrW">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Domain" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="process_zone" attr_length="48" ID="aIhWyacJkUl8hY87cjIz3V">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Process Zone" help_text="Defines the main process in which a document is used. In the DIA Reference Model, Regulatory Submission is the only process zone at this time." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="sent_for_approval_date" ID="1xsJVzXB4br9hgro*Zhnxo">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Sent for Approval Date" help_text="Date on which the document is sent for approval." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="TIME"/>
+        </attributes>
+        <attributes attr_name="auto_attach_to" attr_length="64" ID="yX8aXb4QQ6boNpHnlIR+*">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Auto Attach to" help_text="Used internally in attachment forms to pass parameter to server method" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="auto_set_to_effective" ID="f4PP7AoiATbaJkp7zrWpAC">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg="false"/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Automatically Promote To Effective" help_text="Indicates that the document should be automatically promoted to effective when the effective date is reached" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType"/>
+        </attributes>
+        <attributes attr_name="is_placeholder" ID="9o8elGBt4FX86PEfF9Cfv1">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg="false"/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Placeholder" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType"/>
+        </attributes>
+        <attributes attr_name="inclusion_rule" ID="4hBH80s9Qks94PpuaRWggK">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Inclusion Rule" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="INTEGER"/>
+        </attributes>
+        <attributes attr_name="reason_for_omission" attr_length="64" ID="dzO3AifCQCZb3X+mu98BEv">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Reason For Omission" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="previous_state" attr_length="16" ID="fg4N2Fny4sD8sgIJfb*mGV">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Previous Lifecycle State" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="is_repeatable" ID="dP7xyXiR4IX9ljDt5FcUSJ">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg="false"/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Repeatable" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType"/>
+        </attributes>
+        <attributes attr_name="is_submissible" ID="fnt4pQPLQrg8s4W6uV3*rV">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg="false"/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Used in Regulatory Submissions" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType"/>
+        </attributes>
+        <attributes attr_name="actual_doc_count" ID="loE96A*ksYaHin+ESlIUI">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Actual Document Count" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="INTEGER"/>
+        </attributes>
+        <attributes attr_name="planned_doc_count" ID="dJY127KGAV982GtbwTWPeB">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Planned Document Count" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="INTEGER"/>
+        </attributes>
+        <attributes attr_name="expected_doc_count" ID="5vd6LZ6Vka59*XGLhWfshh">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Expected Document Count" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="INTEGER"/>
+        </attributes>
+        <attributes attr_name="is_shared" ID="bzQ26w3AA9bJznSzT06tQ">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg="false"/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Shared" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType"/>
+        </attributes>
+        <attributes attr_name="uses_special_naming_conv" ID="3Mk2ifDiAR0bLR2UBybmAb">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg="false"/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Uses special naming conventions" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType"/>
+        </attributes>
+        <attributes attr_name="tbr_redistribution_list" attr_repeating="true" attr_length="255" ID="8D2DB2714ag8EKOXu4uhkh">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="TBR Redistribution List" help_text="To be read (TBR) redistribution list. Users that reject a TBR task will be automatically added to this list." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="recall_recipients" attr_repeating="true" attr_length="255" ID="awUpSo9nQkabM+fJoe+dy2">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="true" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Recall Recipients" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="wf_authors" attr_repeating="true" attr_length="255" ID="6YQSQ+Q7AfXabJp2huVFIM">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Workflow Authors" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="wf_reviewers" attr_repeating="true" attr_length="255" ID="dnxIXcx7A6rbJs8e1SvAZI">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Workflow Reviewers" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="wf_approvers" attr_repeating="true" attr_length="255" ID="dq*Y8a6MkX+bZAaQLWWoUu">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Workflow Approvers" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="wf_qo_approvers" attr_repeating="true" attr_length="255" ID="5uk5opHi4JHa+QlVs754Yn">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Workflow QO Approvers" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="wf_doc_coordinators" attr_repeating="true" attr_length="255" ID="8x3AeVLskh18leAd5KGkuK">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Workflow Document Coordinators" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="promote_on_save_from" attr_repeating="true" attr_length="48" ID="3onaIKTp40ebLTvkhwohJL">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Promote on save from" help_text="Used to automate lifecycle state transition upon Properties save." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="promote_on_save_to" attr_repeating="true" attr_length="48" ID="5rwgzcm+kVM9PBvoyQnalE">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="promote on save to" help_text="Used to automate lifecycle state transition upon Properties save." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="wf_process_list" attr_repeating="true" attr_length="48" ID="9Faaj0P0k5Lbb2eBvjHE1P">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Workflow Process List" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="wf_signature_list" attr_repeating="true" attr_length="48" ID="dnbHio*hkm19tCnAl5*V6m">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Workflow Signature List" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="external_approval_date" ID="ceH4bYfMQGF8wUU64Ja8nr">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="External Approval Date" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="TIME"/>
+        </attributes>
+        <attributes attr_name="external_effective_date" ID="eezsI796QCg9HwgCFLP53R">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="External Effective Date" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="TIME"/>
+        </attributes>
+        <attributes attr_name="wf_format_reviewers" attr_repeating="true" attr_length="255" ID="9TxKsQAjQU+8s2fBuSd0lL">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="WF Format Reviewers" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="format_reviewers" attr_repeating="true" attr_length="255" ID="kA8jQIvAkX9HAOZFtKnvI">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Format Reviewers" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="planned_effective_date" ID="3GqH84BYAf6bGA8aVj29Zc">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Planned Effective Date" help_text="Date on which the document is supposed to be made Effective." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="TIME"/>
+        </attributes>
+        <attributes attr_name="expiry_review_date" ID="bRYB3a8pQbn8tw47PVRjzV">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Expiration Review Date" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="TIME"/>
+        </attributes>
+        <attributes attr_name="last_expiry_review_date" ID="95FBJLrPkYGaFUDaDRjjDx">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Last Review Date" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="TIME"/>
+        </attributes>
+        <attributes attr_name="wf_authors_review" attr_repeating="true" attr_length="255" ID="6cG6+8siANdaS*rd*M75fm">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Workflow Authors Review" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="periodic_review_due_date" ID="cUQzo9OG4l79nmCOvEI4BO">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="true" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Periodic Review Due Date" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="TIME"/>
+        </attributes>
+        <attributes attr_name="last_periodic_review_date" ID="566*Fc*tQqhav*N3+k9GBm">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Last Periodic Review Date" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="TIME"/>
+        </attributes>
+        <attributes attr_name="next_periodic_review_date" ID="2irVtgxbAp1aqJM8po960Y">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="true" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Next Periodic Review Date" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="TIME"/>
+        </attributes>
+        <attributes attr_name="review_notif_recipients" attr_repeating="true" attr_length="255" ID="aHM*xEpFAU09vwO9J+5pG9">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Periodic Review Recipients" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="wf_periodic_reviewers" attr_repeating="true" attr_length="255" ID="vMgFTXfAhT9yf*9Rt1hxC">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="WF Periodic Reviewers" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="periodic_reviewers" attr_repeating="true" attr_length="255" ID="4mVnBP8TkLL9bctCKulTdx">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Periodic Reviewers" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="periodic_review_interval" attr_length="32" ID="2aqLRJK2Q5Ab15CV8nOARm">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Review Interval" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="review_start_days" attr_length="32" ID="3ZHwGFrI4Sl96UwiGw64pm">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Review Start Days" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="wf_is_in_workflow" ID="9KMrbEj2QP5b7kwdVuVIc3">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="true" is_hidden="inherit" not_null="inherit" default_search_arg="false"/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="In Workflow" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType"/>
+        </attributes>
+        <attributes attr_name="wf_workflow_name" attr_length="255" ID="2jU9n+sq4Wg8xOPL3sJ94p">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="true" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Workflow Name" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="withdraw_reason" attr_length="400" ID="pHoboAHkpoatXKIqolsFE">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Withdrawal Reason" help_text="Reason for withdrawing the document." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="withdraw_date" ID="2zszLpgKQag86x4i+akpG1">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Withdrawal Date" help_text="Date on which the document is Withdrawn." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="TIME"/>
+        </attributes>
+        <attributes attr_name="wf_generic_1" attr_length="32" ID="3BAcHfYikeRaS6Wfc*SVFx">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="WF Generic Attribute" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="expiry_review_interval" attr_length="32" ID="5mhG2sF14ZK8S5Vc0VoTBp">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Expiry Review Interval" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="notification_list" attr_repeating="true" attr_length="128" ID="f1vCHW75AKqaz6I**LQuxB">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Notification List" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="sent_for_review_date" ID="8tqvvIod4bvbvrxrU62Dem">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Sent for Review Date" help_text="Date on which the document is sent for review." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="TIME"/>
+        </attributes>
+        <attributes attr_name="cd_migrated" ID="7bb3BAGT4*MbONbYHrMtDw">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg="false"/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType"/>
+        </attributes>
+        <attributes attr_name="cd_migrated_object_id" attr_length="16" ID="3h52y05YQoe9FMbAclqibz">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="ID"/>
+        </attributes>
+        <attributes attr_name="cd_migrated_chronicle_id" attr_length="16" ID="cOIf2ecW4bXboyd4vRyyKH">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="ID"/>
+        </attributes>
+        <attributes attr_name="cd_migrated_source" attr_length="16" ID="3yP0JRxnQlW8ORlMNzsv2y">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="cst_string_s_01" attr_length="255" ID="2DxuxEcBAuna+bX*KaDuFg">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="cst_string_s_02" attr_length="255" ID="faMFIWYaAkX8foPv+ovMMx">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="cst_string_s_03" attr_length="255" ID="vyH9jb6kvd9Y6JlavIbBK">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="cst_string_s_04" attr_length="255" ID="cBkq0rG1QLM8OryAgwCk6U">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="cst_string_s_05" attr_length="255" ID="6KlBJ6E44Nc9oOH07t2idy">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="cst_string_r_01" attr_repeating="true" attr_length="255" ID="UG7+DJCk3ob2b3rcAlwgA">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="cst_string_r_02" attr_repeating="true" attr_length="255" ID="43FOnxqrA*O8B4xF4zM6Vg">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="cst_string_r_03" attr_repeating="true" attr_length="255" ID="1Rdt1xKOAwH9pyQlYQJqhe">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="cst_number_s_01" ID="9AoY*RRz4mZ9N+AeLcWC8G">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="INTEGER"/>
+        </attributes>
+        <attributes attr_name="cst_number_s_02" ID="eCuGBFqx4*9brzwlRNTvok">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="INTEGER"/>
+        </attributes>
+        <attributes attr_name="cst_number_s_03" ID="fL1zxt6h4sW9JpXSxesvgi">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="INTEGER"/>
+        </attributes>
+        <attributes attr_name="cst_number_r_01" attr_repeating="true" ID="e1KqE2Ugk6EaoEd+QeLQwk">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="INTEGER"/>
+        </attributes>
+        <attributes attr_name="cst_number_r_02" attr_repeating="true" ID="6mbwBDObAddaCOgXXJaGIE">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="INTEGER"/>
+        </attributes>
+        <attributes attr_name="cst_date_s_01" ID="2IakWxPAAoxbnSugAOvonO">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="TIME"/>
+        </attributes>
+        <attributes attr_name="cst_date_s_02" ID="4Cr2Wqw4kKc8mgtptcPYdi">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="TIME"/>
+        </attributes>
+        <attributes attr_name="cst_date_s_03" ID="9ue4*uRGkNC87utv2vXUdX">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="TIME"/>
+        </attributes>
+        <attributes attr_name="cst_date_s_04" ID="1oPr+fQfkE0aJJh7g1rs2Q">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="TIME"/>
+        </attributes>
+        <attributes attr_name="cst_date_s_05" ID="gJbnNZdkw8b25NPRFSBZI">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="TIME"/>
+        </attributes>
+        <attributes attr_name="cst_date_r_01" attr_repeating="true" ID="eJJyPUqDkpE8tQuPbTFZ+F">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="TIME"/>
+        </attributes>
+        <attributes attr_name="original_file_name" attr_length="255" ID="4i4E3PvEQjT9hXmaGwGcWo">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Original File Name" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="copy_file_name" ID="fzUP0rpO4Gi9ASVpv*PMrE">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg="false"/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Copy File Name to Title" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType"/>
+        </attributes>
+        <attributes attr_name="superseded_date" ID="a5irsxhP42*aMOUdIT0aGk">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Superseded Date" help_text="Date on which the document was Superseded" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="TIME"/>
+        </attributes>
+        <typeAnnotations xsi:type="dclass:TypeDDInfo" is_searchable="INHERIT"/>
+        <typeAnnotations xsi:type="dclass:NLSDDInfoSet">
+          <locales xsi:type="dclass:TypeNLSDDInfo" label_text="Controlled Document" help_text="" comment_text="" nls_key="en"/>
+        </typeAnnotations>
+      </primaryElement>
+      <super_name href="urnd:com.emc.ide.artifact.dclass/dm_document?name=dm_document#//@dataModel"/>
+    </type>
+  </dataModel>
+  <viewModel xsi:type="Artifact:DefaultArtifactViewModel"/>
+</Artifact:Artifact>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Artifact:Artifact xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Artifact="http://documentum.emc.com/infrastructure/12012007/artifact" xmlns:dclass="http://documentum.emc.com/artifact/12012007/dclass" urn="urn:com.emc.ide.artifact.dclass/d2_dictionary?name=d2_dictionary" categoryId="com.emc.ide.artifact.dclass" modifiedByUser="false">
+  <dataModel xsi:type="dclass:DClass">
+    <type name="d2_dictionary">
+      <primaryElement>
+        <attributes attr_name="alias_name" attr_repeating="true" attr_length="32" ID="9*RcTziSQs997fzJubgRUa">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="locale_name" attr_repeating="true" attr_length="5" ID="dYkR9FFFk5sbpS42+15F3A">
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="security_group" attr_length="32" ID="8qZQvRwFA0gaujiGDsC*MV">
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Administration group" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="version" ID="11t8aWJWAmKbDK4mzTBQt2">
+          <attr_type xsi:type="dclass:CSDefinedType" values="INTEGER"/>
+        </attributes>
+        <attributes attr_name="manual_order" ID="awuqgBg6kAd9RIfpRb9iFm">
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Manual sort" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType"/>
+        </attributes>
+        <attributes attr_name="label_locale" attr_repeating="true" attr_length="32" ID="9iTBVOxdQXdaIZ57lKxTMM">
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="label_value" attr_repeating="true" attr_length="255" ID="5fEhn0VDkuh8imbkkzj2Vx">
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="search_group" attr_length="32" ID="2B6k+1XLQoZ9x0bLb0nsGZ">
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="application_names" attr_repeating="true" attr_length="255" ID="eoFndVhaksl9Vw2PF9W5Dg">
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="dql" attr_length="2000" ID="Zi501LfkhkbKVdKECkxjV">
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="is_dql" ID="bJgSMWdeQZQ9Q3nz*EEplw">
+          <attr_type xsi:type="dclass:CSDefinedType"/>
+        </attributes>
+        <attributes attr_name="is_dql_cache" ID="qlHU*34A+2bmeQelUWQjO">
+          <attr_type xsi:type="dclass:CSDefinedType"/>
+        </attributes>
+        <attributes attr_name="is_versioned" ID="dBiEyEOh4AD8J5nIDsS3z3">
+          <attr_type xsi:type="dclass:CSDefinedType"/>
+        </attributes>
+        <attributes attr_name="create_view_option" ID="1Z1yEX*yQ9PavCItozqH*o">
+          <attr_type xsi:type="dclass:CSDefinedType"/>
+        </attributes>
+        <attributes attr_name="lock_config" ID="7oJ08lipQlIbPzXqeZPAQw">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType"/>
+        </attributes>
+        <attributes attr_name="parents_config" attr_repeating="true" attr_length="255" ID="4SPo*jcR4EZaEEV7+gejt0">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <typeAnnotations xsi:type="dclass:TypeDDInfo" is_searchable="INHERIT"/>
+        <typeAnnotations xsi:type="dclass:NLSDDInfoSet">
+          <locales xsi:type="dclass:TypeNLSDDInfo" label_text="Dictionary" help_text="" comment_text="" nls_key="en"/>
+        </typeAnnotations>
+      </primaryElement>
+      <super_name href="urn:com.emc.ide.artifact.dclass/dm_sysobject?name=dm_sysobject#//@dataModel"/>
+    </type>
+  </dataModel>
+  <viewModel xsi:type="Artifact:DefaultArtifactViewModel"/>
+</Artifact:Artifact>

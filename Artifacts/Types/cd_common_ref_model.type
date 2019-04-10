@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Artifact:Artifact xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Artifact="http://documentum.emc.com/infrastructure/12012007/artifact" xmlns:dclass="http://documentum.emc.com/artifact/12012007/dclass" urn="urn:com.emc.ide.artifact.dclass/cd_common_ref_model?name=cd_common_ref_model" categoryId="com.emc.ide.artifact.dclass" implicitlyCreated="true" modifiedByUser="false">
+  <dataModel xsi:type="dclass:DClass">
+    <type name="cd_common_ref_model">
+      <primaryElement>
+        <attributes attr_name="primary_group" attr_length="128" ID="1LPLlEPrAEf9WgdyvRVwdp">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Group" help_text="Categorizes the content of the domain based on logical groupings or CTD modules." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="subgroup" attr_length="128" ID="2FGh8EOCQCObbnHN2nobTr">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Sub-Group" help_text="Categorizes the content of the group, usually based on CTD module subsets." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="region" attr_length="16" ID="3CtRe9TSAQ38TuuFGE+hpH">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Geographic Region" help_text="Geographic regions of ICH; currently EU, USA, and General." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="artifact_name" attr_length="230" ID="dkqu8XKOAmz9YnCa2Zy8jt">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Artifact Name" help_text="Name of document created for the submission process." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="component_name" attr_length="48" ID="6R1DX7eIk5QbBY9sf*Jpvc">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Component Name" help_text="The name of a part that will be assembled with other parts to create a compound document (ex., body, tables, figures, appendix)." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="product_compound_id" attr_repeating="true" attr_length="64" ID="c1Xo0jj8APgbhDaiYxazrm">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Compound ID(s)" help_text="Unique identifier naming a product, small molecule or biologic. It can be company specific and is used to identify data associated with nonclinical research and testing." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="product_generic_name" attr_repeating="true" attr_length="128" ID="d0l2os7tQ888Xvjkq*CYhp">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Generic Name(s)" help_text="The unique nonproprietary or common name for a drug defined by establishing logical nomenclature classifications based on pharmacological and/or chemical relationships and approved by USAN and/or INN." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="product_trade_name" attr_repeating="true" attr_length="128" ID="53WdCoWXQzDbzwcvxtMZOB">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Trade Name(s)" help_text="The proprietary name of a drug product designated for regulatory approval/marketing. Same as brand name." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="purpose" attr_length="400" ID="4wjlkKxbQcX81SHnAVy5kh">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Purpose" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="trial_num" attr_length="16" ID="bT0lEbneQuo8u4mRoKAKre">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Trial Number" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="indication" attr_repeating="true" attr_length="128" ID="f3mNSVGc4wnbHgDZkl85M1">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Indication(s)" help_text="The defined disease, syndrome, orclinical condition for which a patient may be treated with an investigational or marketed pharmaceutical product. For example, diabetes is an indication for insulin." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="trial_phase" attr_length="16" ID="4xiqdF2IAB8a1GDpuuzVaV">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Trial Phase" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="route_of_admin" attr_repeating="true" attr_length="32" ID="eG9jwQee4ck9t*LswWkHqd">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Route(s) of Administration" help_text="The path by which a drug is brought into contact with the body." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="sop_reference" attr_repeating="true" ID="blAlzPmH4q49nYTeruFM7h">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="SOP Reference" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="ID"/>
+        </attributes>
+        <attributes attr_name="dia_edm_ref_model_version" attr_length="16" ID="2lNWQihPAk+8Wu6YRvirUy">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="DIA EDM Reference Model Version" help_text="Version of the DIA EDM Reference Model used." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="therapeutic_area" attr_length="48" ID="8xO4ZeK7k6Nb214qSvWu9q">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="true" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Therapeutic Area" help_text="Therapeutic area." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="product_code" attr_length="32" ID="6EYYobxgQhUbxP7vCZZHyV">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="true" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Product Code" help_text="Internal product identification code." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="dosage_form" attr_repeating="true" attr_length="128" ID="esBh9ADXQIu8xTHmq0bIDK">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Dosage Form" help_text="The form in which a drug product is provided for a defined administration route." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="dosage_strength" attr_repeating="true" attr_length="32" ID="8U9rgJcF4wM9fGUd+JTQ+Q">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Dosage Strength" help_text="The amount of active ingredient provided in a dosage form specified in terms of a defined unit of measure. For example, the amount of active ingredient contained in one dose as specified in the label." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="area_code" attr_length="2" ID="6EdCEhoMkNJbG4kLVr3hyn">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="State / County" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="site_id" attr_repeating="true" attr_length="64" ID="7r7XGoBP4VJazG9H7XH9Z6">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Site Identifier(s)" help_text="Sponsor or CRO code for a specific clinical trial site where subjects were enrolled and treated." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="ind_number" attr_length="16" ID="5TRLEBTNAWJ8+58q8IphVS">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Investigational New Drug Number" help_text="FDA assigned number for an Investigational New Drug (IND)." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="other_product_codes" attr_repeating="true" attr_length="48" ID="fuNtbsft4zG9g6dNcHi*O8">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Other Product Names" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="other_therapeutic_areas" attr_repeating="true" attr_length="48" ID="d*do7UiUkErbSCp6sIXuBA">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Other Therapeutic Areas" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="application_forms" attr_repeating="true" attr_length="64" ID="ddRZiLC4Q0y8C3rFVnXwEb">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Application Forms" help_text="Associates this object with applications." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="application_descriptions" attr_repeating="true" attr_length="64" ID="dRkPWtKt4Ob9Rc5q8pg3mJ">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Application Description" help_text="Associates this object with applications." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="literature_reference" attr_length="255" ID="azVDIUsJkQs87NM7ERhEpA">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Literature Reference" help_text="Standard citation of the literature reference" comment_text="Standard citation of the literature reference" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="atc_code" attr_repeating="true" attr_length="16" ID="2xG5VihAAvRbG7Ic6JROik">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="ATC Code" help_text="Anatomical Therapeutic Chemical classification code for the active ingredients of a drug substance." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="drug_product_manufacturer" attr_repeating="true" attr_length="128" ID="dRww5O0aA1D8gulNXK*ywL">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Drug Product Manufacturer" help_text="Specifies the drug product manufactuturer name." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="drug_product_name" attr_repeating="true" attr_length="64" ID="1nQGZhHJAMa9hbSUkkuWGV">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Drug Product Name" help_text="Specifies the drug product name." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="drug_substance_manufacturer" attr_repeating="true" attr_length="128" ID="199BkZnnA6z8cDgZyF8nQE">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Drug Substance Manufacturer" help_text="Specifies the drug substance manufactuturer name." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="drug_substance_name" attr_repeating="true" attr_length="64" ID="1jnYQLiOApybQbnritBObc">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Drug Substance Name" help_text="Specifies the drug substance name." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="excipients" attr_repeating="true" attr_length="128" ID="3Ck6kSt3QDc9MwTXPhe8ZC">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Excipients" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="packaging_component" attr_repeating="true" attr_length="64" ID="1E0Ww1TtQ4K9e+WGnIX+za">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Packaging Component" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="substance_code" attr_length="32" ID="ePt1AgGo4epamX20hJyme5">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Substance Code" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="country_code" attr_length="2" ID="9GierK5Pkc6aakaX*wUQhE">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Country" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="drug_substance_code" attr_repeating="true" attr_length="32" ID="7yKvgNOjQyE9tsx*AodwrA">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Substance Code" help_text="Specifies the drug substance code." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="product_chemical_names" attr_repeating="true" attr_length="255" ID="6D0vAS354fE8cdbIPqJ3WI">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Product Chemical Names" help_text="Name of the product or project for which the document applies. For the DIA EDM Reference model, this refers to the full chemical name of the product including salt form." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="inn_names" attr_repeating="true" attr_length="64" ID="5L53hLEsAXPaw6FTYhNTvg">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="INN" help_text="INN Name" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="product_trade_country" attr_repeating="true" attr_length="2" ID="atViRmmVQ1bbu2kSWOBwrs">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Product Trade Country" help_text="Product Trade Country" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="comments" attr_length="2000" ID="d8xMFOkB4vZaLW7wp9gTDh">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Comments" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="submission_numbers" attr_repeating="true" attr_length="32" ID="c5eojfmsQINbgP2IVx8Lec">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Submission Number" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="submission_types" attr_repeating="true" attr_length="48" ID="2GSKBzHHALibbGyXg*eD4x">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Submission Type" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="submission_region" attr_repeating="true" attr_length="32" ID="aaMC9sq2kJJ8zn4A4PKTX7">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Region" help_text="Region within which the document is intended to be used." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="submission_transaction" attr_repeating="true" attr_length="16" ID="4SVF32yP4p9bey5kt0xhRO">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Transaction" help_text="A unique identifier for dispatching information to a Regulatory Authority. A transaction may be a complete submission, a letter, a query or response or any other transfer of documentation to a Regulatory Authority." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="submission_ctd_section" attr_repeating="true" attr_length="64" ID="4lBAGubbAzp8aFS+sNp3HR">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="CTD/Section" help_text="The section as defined by the Common Technical Document specification to which the document is applied. For an eCTD submission, this is equivalent to the XML element of the eCTD DTD." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="submission_info_object_id" attr_repeating="true" attr_length="16" ID="6KkdB5Rdkxw8mvfu8q8LGE">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Submission Object Id" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="ectd_section" attr_length="255" ID="2AwgwvyfABHa*L9mkwIhqD">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="eCTD Outline Node" help_text="Section from the eCTD Outline." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="dv_project_name" attr_repeating="true" attr_length="64" ID="2GMUuiaXkPNaaBqb2+UlAz">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Project Name" help_text="Specifies the project name of the device." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="dv_device_id" attr_length="120" ID="14TeC4mUkRxbqtRhGv*IzQ">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Device ID" help_text="Specifies the unique device code recognised in the system." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="dv_device_code" attr_repeating="true" attr_length="64" ID="b2Hi90p1ACm9vefMtXFevN">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Device Code" help_text="Specifies the medical device code." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="dv_device_name" attr_repeating="true" attr_length="64" ID="dkZ9UGdi4xAbxgtzEgRLoj">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Device Name" help_text="Specifies the medical device name." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="dv_device_family" attr_length="120" ID="1af80l+CkWaaAm36udekHg">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Device Family" help_text="Specifies the medical device family." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="dv_subassembly_name" attr_length="64" ID="Jdn*JikQrDb4kD682Cont">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Subassembly Name" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="dv_component_type" attr_length="64" ID="98MhgfYWQJWaR7*RHYW+8+">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Component Type" help_text="Specifies the medical device component type." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="dv_component_name" attr_length="64" ID="9xFtvzDI4Px9Q5Ukk6V6ed">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Component Name" help_text="Specifies the medical device component name." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="dv_component_code" attr_length="64" ID="1x7sq2eVACpaCeracuvsdV">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Component Code" help_text="Specifies the medical device component code." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="dv_subassembly_code" attr_length="64" ID="2NsBYWHu4TibnASitjCeQq">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Subassembly Code" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="component_version" attr_length="64" ID="dpNgrr7WAFPafX5XN03ZMJ">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Component Version" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="variable_part_of_name" attr_length="255" ID="9t6*K4xSAP38whjaXJ2vUp">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Variable Part Of Name" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="eudact_number" attr_length="256" ID="7yLlsGbQARV9cyzYRR0O1i">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="EudraCT Number" help_text="Unique EudraCT number obtained from the EudraCT database" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="dv_device_subfamily" attr_length="120" ID="6UXAzVXo41v9KlVr0fXTxl">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Device Subfamily" help_text="Specifies the medical device subfamily." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="dv_device_model_number" attr_repeating="true" attr_length="64" ID="2m8T4t5BkC+91lN*aZTbwJ">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Device Model Number" help_text="Specifies the device model number." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="dv_intended_use" attr_repeating="true" attr_length="255" ID="ari3n6vf4fUbUoha8U0qeb">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Intended Use" help_text="Specifies the intended use of the medical device." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="dv_notified_bodies" attr_repeating="true" attr_length="64" ID="57TJndHWQ7x9mukcp*M+7H">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Notified Body" help_text="Specifies the notified bodies of the medical device." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="excipient_name" attr_repeating="true" attr_length="64" ID="dCWFS9QSQQc8yvP1dil26R">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Excipient Name" help_text="Identifies the name of the excipient the document refers to" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="associated_products" attr_repeating="true" attr_length="32" ID="b7Ul90JSQmwb5A9tigq0jJ">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Associated Products" help_text="Associates this object with products." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="submission_descriptions" attr_repeating="true" attr_length="255" ID="667*PNrd4Mka1+g1hV2ANR">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Submission Description" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <typeAnnotations xsi:type="dclass:TypeDDInfo" is_searchable="INHERIT"/>
+        <typeAnnotations xsi:type="dclass:NLSDDInfoSet">
+          <locales xsi:type="dclass:TypeNLSDDInfo" label_text="Common DIA Reference Model" help_text="" comment_text="" nls_key="en"/>
+        </typeAnnotations>
+      </primaryElement>
+      <super_name href="urn:com.emc.ide.artifact.dclass/cd_controlled_doc?name=cd_controlled_doc#//@dataModel"/>
+    </type>
+  </dataModel>
+  <viewModel xsi:type="Artifact:DefaultArtifactViewModel"/>
+</Artifact:Artifact>

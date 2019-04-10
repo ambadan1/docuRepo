@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Artifact:Artifact xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Artifact="http://documentum.emc.com/infrastructure/12012007/artifact" xmlns:dclass="http://documentum.emc.com/artifact/12012007/dclass" urn="urn:com.emc.ide.artifact.dclass/cd_clinical?name=cd_clinical" categoryId="com.emc.ide.artifact.dclass" modifiedByUser="false">
+  <dataModel xsi:type="dclass:DClass">
+    <type name="cd_clinical">
+      <primaryElement>
+        <attributes attr_name="clinical_study_num" attr_length="16" ID="4N8pxLQ9Av8bjf3ZDPpxHn">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Clinical Study #" help_text="A unique identifier associated with a clinical study as provided to Module 5 artifacts. Usually single valued, but may be associated with one or more synonyms." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="clinical_study_title" attr_length="255" ID="eUOaAVwnAckbfyr8vL3NSK">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Clinical Study Title" help_text="The actual title of the study as written on the cover page of the protocol. Applies to all documents/components in the study." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="study_phase" attr_length="8" ID="13MG5NVA4xhbyU6BKRuodr">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Study Phase" help_text="Categorization of clinical studies based on the objectives of the study. Generally, Phase 1 studies are designed to determine dosing and safety in healthy subjects; Phase 2 studies are designed to assess safety at recommended doses." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="clinical_trial_id" attr_length="16" ID="dfeWqiQSAIsb1*4wlIPO+r">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Clinical Trial Identifier" help_text="A unique identifier provided by a Regulatory Authority when registering a trial. This is distinct from the Clinical Study Number; however, they both refer to the same clinical trial." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="type_of_control" attr_length="64" ID="8xvXWcXg45Z9wJhVFqM7Rb">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Type of Control" help_text="Control groups in clinical trials can be classified on the basis of two critical attributes: (1) the type of treatment used and (2) the method of determining who will be in the control group." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="ectd_stf_tag_elem" attr_length="16" ID="7Ij9xFAP4LE9ygPtvKUGIx">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="eCTD STF Tag Element" help_text="Used for clinical report components." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="study_name" attr_length="64" ID="3jCchiaAQ+c8xLR2HTOQvV">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Study Name" help_text="Name of the clinical study." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="subject_id" attr_repeating="true" attr_length="64" ID="9kcnSpT44uI8h1VkEg50Hz">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Subject Identifier" help_text="A sponsor or CRO code identifying the specific subject or patient enrolled in a clinical study. " comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="clinical_study_ids" attr_repeating="true" attr_length="32" ID="a*0vGnFHQsV9Ipt7Dp+mrE">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Clinical Study IDs" help_text="Identifier for the study in which the trial is being conducted." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="clinical_study_id_types" attr_repeating="true" attr_length="32" ID="5g0QSzTqk5L8ou3ZqyLsV5">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Clinical Study ID Types" help_text="Type of study in which the trial is being conducted." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="is_cross_over" ID="9SrF1XrABL88FHJqOI1kR">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Is Crossover Document" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType"/>
+        </attributes>
+        <attributes attr_name="dv_development_stage" attr_length="64" ID="2IipPhuTQ60apefDHwOAqb">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Development Stage" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="study_type" attr_length="120" ID="1+jLxJUMkYZam2Yg26k5Fg">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" ignore_constraints="INHERIT" is_searchable="TRUE" is_required="inherit" read_only="inherit" ignore_immutable="inherit" is_hidden="inherit" not_null="inherit" default_search_arg=""/>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="Clinical Study Type" help_text="Device study type." comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <typeAnnotations xsi:type="dclass:TypeDDInfo" is_searchable="INHERIT"/>
+        <typeAnnotations xsi:type="dclass:NLSDDInfoSet">
+          <locales xsi:type="dclass:TypeNLSDDInfo" label_text="Clinical Document" help_text="" comment_text="" nls_key="en"/>
+        </typeAnnotations>
+      </primaryElement>
+      <super_name href="urn:com.emc.ide.artifact.dclass/cd_common_ref_model?name=cd_common_ref_model#//@dataModel"/>
+    </type>
+  </dataModel>
+  <viewModel xsi:type="Artifact:DefaultArtifactViewModel"/>
+</Artifact:Artifact>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Artifact:Artifact xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Artifact="http://documentum.emc.com/infrastructure/12012007/artifact" xmlns:dclass="http://documentum.emc.com/artifact/12012007/dclass" urn="urnd:com.emc.ide.artifact.dclass/d2_dictionary_value?name=d2_dictionary_value" categoryId="com.emc.ide.artifact.dclass">
+  <dataModel xsi:type="dclass:DClass">
+    <type name="d2_dictionary_value">
+      <primaryElement>
+        <attributes attr_name="alias_value" attr_repeating="true" attr_length="1024" ID="8KkqzXaz47b9yYHxF0C8pf">
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="locale_value" attr_repeating="true" attr_length="512" ID="bJrFcM5ekKCbBGz3hWjNDI">
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="is_enabled" ID="2eEPHAAcA4H8M882MEhyfI">
+          <attrAnnotations xsi:type="dclass:AttrDDInfo" is_searchable="TRUE" default_search_arg="false">
+            <default_value expressionName="" expressionText="true">
+              <objectType href="urnd:com.emc.ide.artifact.dclass/dm_literal_expr?name=dm_literal_expr#//@dataModel"/>
+            </default_value>
+          </attrAnnotations>
+          <attrAnnotations xsi:type="dclass:NLSDDInfoSet">
+            <locales xsi:type="dclass:AttrNLSDDInfo" label_text="" help_text="" comment_text="" nls_key="en" category_name="" format_pattern="" not_null_msg=""/>
+          </attrAnnotations>
+          <attr_type xsi:type="dclass:CSDefinedType"/>
+        </attributes>
+        <attributes attr_name="dictionary_name" attr_length="255" ID="d*80GkdQ4oB8L*vNqBBYvp">
+          <attr_type xsi:type="dclass:CSDefinedType" values="STRING"/>
+        </attributes>
+        <attributes attr_name="order_no" ID="9YyGcheSA3y9lpmVW0EY*E">
+          <attr_type xsi:type="dclass:CSDefinedType" values="INTEGER"/>
+        </attributes>
+        <typeAnnotations xsi:type="dclass:TypeDDInfo" ignore_constraints="INHERIT" is_searchable="INHERIT"/>
+        <typeAnnotations xsi:type="dclass:NLSDDInfoSet">
+          <locales xsi:type="dclass:TypeNLSDDInfo" label_text="Dictionary value" help_text="" comment_text="" nls_key="en"/>
+        </typeAnnotations>
+      </primaryElement>
+      <super_name href="urnd:com.emc.ide.artifact.dclass/dm_sysobject?name=dm_sysobject#//@dataModel"/>
+    </type>
+  </dataModel>
+  <viewModel xsi:type="Artifact:DefaultArtifactViewModel"/>
+</Artifact:Artifact>

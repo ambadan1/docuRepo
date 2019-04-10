@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Artifact:Artifact xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Artifact="http://documentum.emc.com/infrastructure/12012007/artifact" xmlns:dardef="http://documentum.emc.com/infrastructure/12012007/dardef" xmlns:dclass="http://documentum.emc.com/artifact/12012007/dclass" xmlns:installparameter="installparameter" urn="urnd:com.emc.ide.artifact.dardef/default?artifactURI=file:/C:/Composer_3.8_64bit/DocumentumProject/dar/default.dardef" categoryId="com.emc.ide.artifact.dardef">
+  <dataModel xsi:type="dardef:DarDef" objectName="DocumentumProject" contentType="jar" sourceDir="bin" name="DocumentumProject">
+    <objectType href="urnd:com.emc.ide.artifact.dclass/dmc_dar?artifactURI=platform:/resource/DFS2/inst/dclass/dmc_dar.type#//@dataModel"/>
+    <version/>
+    <artifacts xsi:type="dclass:DClass" href="urnd:com.emc.ide.artifact.dclass/d2_dictionary_value?name=d2_dictionary_value#//@dataModel"/>
+    <artifacts xsi:type="dclass:DClass" href="urnd:com.emc.ide.artifact.dclass/d2_dictionary?name=d2_dictionary#//@dataModel"/>
+    <artifacts xsi:type="dclass:DClass" href="urnd:com.emc.ide.artifact.dclass/cd_reg_correspondence?name=cd_reg_correspondence#//@dataModel"/>
+    <artifacts xsi:type="dclass:DClass" href="urnd:com.emc.ide.artifact.dclass/cd_reg_admin?name=cd_reg_admin#//@dataModel"/>
+    <artifacts xsi:type="dclass:DClass" href="urnd:com.emc.ide.artifact.dclass/cd_controlled_folder?name=cd_controlled_folder#//@dataModel"/>
+    <artifacts xsi:type="dclass:DClass" href="urnd:com.emc.ide.artifact.dclass/cd_controlled_doc?name=cd_controlled_doc#//@dataModel"/>
+    <artifacts xsi:type="dclass:DClass" href="urnd:com.emc.ide.artifact.dclass/cd_common_ref_model?name=cd_common_ref_model#//@dataModel"/>
+    <artifacts xsi:type="dclass:DClass" href="urnd:com.emc.ide.artifact.dclass/cd_clinical?name=cd_clinical#//@dataModel"/>
+    <artifacts xsi:type="installparameter:FolderParameter" href="urnd:com.emc.ide.folderparameter/Dar+Install+Folder?artifactURI=file:/C:/Composer_3.8_64bit/DocumentumProject/Artifacts/Installation%20Parameters/darinstallfolder.parameter#//@dataModel"/>
+    <artifacts xsi:type="dclass:DClass" href="urnd:com.emc.ide.artifact.dclass/dmc_dar?artifactURI=platform:/resource/DFS2/inst/dclass/dmc_dar.type#//@dataModel"/>
+    <artifacts xsi:type="dardef:DarDef" href="urnd:com.emc.ide.artifact.dardef/default?artifactURI=file:/C:/Composer_3.8_64bit/DocumentumProject/dar/default.dardef#//@dataModel"/>
+    <installOptions key="//@dataModel">
+      <value>
+        <location xsi:type="installparameter:FolderParameter" href="urnd:com.emc.ide.folderparameter/Dar+Install+Folder?artifactURI=file:/C:/Composer_3.8_64bit/DocumentumProject/Artifacts/Installation%20Parameters/darinstallfolder.parameter#//@dataModel"/>
+        <upgradeOption xsi:type="dardef:UpgradeOption" optionValue="VERSION"/>
+      </value>
+    </installOptions>
+    <darInstallOptionsSet>
+      <location xsi:type="installparameter:FolderParameter" href="urnd:com.emc.ide.folderparameter/Dar+Install+Folder?artifactURI=file:/C:/Composer_3.8_64bit/DocumentumProject/Artifacts/Installation%20Parameters/darinstallfolder.parameter#//@dataModel"/>
+      <upgradeOption xsi:type="dardef:UpgradeOption"/>
+    </darInstallOptionsSet>
+  </dataModel>
+</Artifact:Artifact>
